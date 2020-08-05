@@ -1,0 +1,47 @@
+@keyframes firstAni{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes secondAni{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+@keyframes thirdAni{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes fourthAni{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+.myWorks .swiper-container .swiper-slide .aproject .overlay a:hover span:first-of-type{
+    animation: firstAni 1.5s linear infinite  ;
+}
+.myWorks .swiper-container .swiper-slide .aproject .overlay a:hover span:nth-of-type(2){
+    animation: secondAni 1.5s linear infinite  ;
+    animation-delay: .75s;
+}
+.myWorks .swiper-container .swiper-slide .aproject .overlay a:hover span:nth-of-type(3){
+    animation: thirdAni 1.5s linear infinite  ;
+}
+.myWorks .swiper-container .swiper-slide .aproject .overlay a:hover span:last-of-type{
+    animation: fourthAni 1.5s linear infinite  ;
+    animation-delay: .75s;
+}
